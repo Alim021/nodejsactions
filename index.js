@@ -7,7 +7,7 @@ setInterval(function() {
 	console.log(renderApp(new Date()));
 }, 5000);
 
-console.log("test");
+console.log("node test");
 if(module.hot) {
 	module.hot.accept("./renderApp", function() {
 		renderApp = require("./renderApp");
